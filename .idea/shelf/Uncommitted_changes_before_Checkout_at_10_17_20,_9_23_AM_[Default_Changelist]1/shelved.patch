@@ -1,0 +1,196 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/mockups\n.idea/workspace.xml\n.idea git\n.idea/.idea_backup/modules.xml\n.idea/.idea_backup/prettier.xml\n.idea/.idea_backup/responsive_layout_v3.iml\n.idea/.idea_backup/workspace.xml\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(revision cb56380adc908735a375e7270985de09416f83e0)
++++ .gitignore	(date 1602962161208)
+@@ -1,8 +1,8 @@
+-/mockups
+ .idea/workspace.xml
+ .idea git
+ .idea/.idea_backup/modules.xml
+ .idea/.idea_backup/prettier.xml
+ .idea/.idea_backup/responsive_layout_v3.iml
+ .idea/.idea_backup/workspace.xml
+-
++/mockups
++/fonts/other
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width-device-width, initial-scale=1\" />\r\n    <link href=\" \" rel=\"stylesheet\" type=\"text/css\" />\r\n    <title></title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\" />\r\n  </head>\r\n\r\n  <body>\r\n    <div class=\"main-nav\">\r\n      <ul class=\"nav\">\r\n        <li class=\"title\"></li>\r\n        <li><a href=\"#\">Home</a></li>\r\n        <li><a href=\"#\">Contact</a> </li>\r\n        <li><a href=\"#\">Portfolio</a> </li>\r\n      </ul>\r\n    </div>\r\n    <header></header>\r\n\r\n    <footer></footer>\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision cb56380adc908735a375e7270985de09416f83e0)
++++ index.html	(date 1602957470075)
+@@ -1,24 +1,148 @@
+ <!DOCTYPE html>
+ <html lang="en">
+-  <head>
+-    <meta charset="utf-8" />
+-    <meta name="viewport" content="width-device-width, initial-scale=1" />
+-    <link href=" " rel="stylesheet" type="text/css" />
+-    <title></title>
+-    <link rel="stylesheet" href="styles.css" />
+-  </head>
++<head>
++    <meta charset="utf-8"/>
++    <meta name="viewport" content="width-device-width, initial-scale=1"/>
++    <link href="fonts"
++          rel="stylesheet"
++          type="text/css"/>
++    <link rel="stylesheet" href="css/style.css"/>
++    <title>My Portfolio</title>
++</head>
+ 
+-  <body>
+-    <div class="main-nav">
+-      <ul class="nav">
+-        <li class="title"></li>
+-        <li><a href="#">Home</a></li>
+-        <li><a href="#">Contact</a> </li>
+-        <li><a href="#">Portfolio</a> </li>
+-      </ul>
++<body>
++<!--main header-->
++<header class="main-header">
++    <div class="container">
++        <h1 class="name">Diego gutierrez</h1>
++        <ul class="nav">
++            <li><a href="#">Home</a></li>
++            <li><a href="#portfolio">Portfolio</a></li>
++            <li><a href="#skills">Skills</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
+     </div>
+-    <header></header>
++
++    <!--banner -->
++    <div class="container clearfix">
++        <img class="img my-photo"
++             src="images/responsive-layout-profile.png"
++             alt="Diego's photo"/>
++        <p class="header-text">Hola! my name is Diego and I'm a front-end
++            developer who loves the process of coding: I love thinking about
++            problems and what steps I could take to solve those problems. I
++            love thinking up web apps and fixes to problems I see in the
++            world. Coding for me gives me that from a large perspective
++            (i.e. what apps can I dream up) and it gives me that on a minute
++            scale (i.e. how do I tell the computer to grab this from the
++            database and show it in a way that others will find it helpful).</p>
++    </div>
++</header>
++<main id="portfolio">
++
++    <h2>PORTFOLIO</h2>
++    <div class="container">
++        <div class="col">
++            <img class="img" src="images/portfolio-1.png" alt="some graphics">
++            <h3>Marketing Page</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
++                esse exercitationem facilis fuga minima nemo numquam quas quod.
++                Ad eum eveniet, fugit iste itaque modi optio perspiciatis quo
++                totam voluptatibus!</p>
++        </div>
++
++        <div class="col">
++            <img src="images/portfolio-2.png" alt="another image"/>
++            <h3>Search Page</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
++                Aspernatur
++                assumenda cumque, dignissimos ducimus earum eius porro veritatis
++                vitae voluptates. Ab atque doloremque fugiat in iusto non qui
++                quidem
++                quo rem.</p>
++            <p></p>
++        </div>
++
++        <div class="col">
++            <img class="img" src="images/portfolio-3.png"
++                 alt="UI of a travel app">
++            <h3>Travel App</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
++                consectetur culpa impedit iusto laboriosam, nemo officiis
++                possimus
++                quod repudiandae tempora. Corporis dolor ea eligendi laudantium
++                nihil numquam, quidem quod voluptate.</p>
++        </div>
++
++        <div class="col">
++            <img class="img" src="images/portfolio-4.png" alt="google maps">
++            <h3>Map of Favorite Spots</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
++                animi
++                aut blanditiis delectus eaque esse excepturi fuga labore
++                nesciunt
++                optio placeat possimus quibusdam, tempore veritatis vero!
++                Adipisci
++                aliquam dicta ipsum.</p>
++        </div>
++
++        <div class="col">
++            <img class="img" src="images/portfolio-5.png" alt="photo gallery">
++            <h3>Photo Gallery</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
++                Assumenda
++                blanditiis commodi cum est, explicabo facilis in laudantium
++                nesciunt
++                nisi numquam placeat recusandae reprehenderit saepe tempore unde
++                veritatis voluptatem. Aspernatur, non?</p>
++        </div>
++
++        <div class="col">
++            <img class="img" src="images/portfolio-6.png" alt="calculator app">
++            <h3>Calculator</h3>
++            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
++                consectetur dignissimos eum facere in ipsam labore odit porro
++                quasi
++                vero? Consequuntur distinctio excepturi iste nesciunt nulla
++                officia
++                provident quae quam.</p>
++        </div>
++    </div>
++    <div id="skills" class="skills">
++        <h3>SKILLS</h3>
++        <ul>
++            <li>HTML</li>
++            <li>CSS</li>
++            <li>JavaScript</li>
++            <li>ReactJs</li>
++        </ul>
++    </div>
+ 
+-    <footer></footer>
+-  </body>
++    <div id="contact" class="contact">
++        <h2>CONTACT</h2>
++        <p>More about me</p>
++        <ul>
++            <li><strong>Phone:</strong><a>+1 (808)-563-3197</a></li>
++            <li><strong>Email:</strong><a
++                    href="mailto:diego_ggv@pm.me?subject=Hello,%20I'm%20interested%20in%20your%20work">
++                diego_ggv@pm.me</a></li>
++        </ul>
++    </div>
++</main>
++
++<footer class="main-footer">
++    <div class="container">
++        <span class="footer-name">DIEGO GUTIERREZ</span>
++        <div class="footer-nav">
++            <a class="nav-mobile" href="#top">BACK TO TOP</a>
++            <ul class="nav-big-scr">
++                <li><a href="#top">Home</a></li>
++                <li><a href="#portfolio">Portfolio</a></li>
++                <li><a href="#skills">Skills</a></li>
++                <li><a href="#contact">Contact</a></li>
++            </ul>
++        </div>
++    </div>
++</footer>
++</body>
+ </html>
