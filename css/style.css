@@ -1,12 +1,9 @@
 /* Web fonts */
 @font-face {
-    font-family: 'Quicksand Light';
-    src: url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-family: 'Fascinate', cursive;
 }
-
 @font-face {
-    font-family: "Quicksand SemiBold";
-    src: url("../fonts/Quicksand-SemiBold.ttf") format('truetype');
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Base Element Styles */
@@ -17,16 +14,21 @@
 
 body,
 h3 {
-    font-family: 'Quicksand Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Quicksand", sans-serif;
     line-height: 1.6;
+    font-weight: 300;
     color: #3a3a3a;
 }
 
 h1,
-h2,
+h2 {
+    font-family: "Fascinate", sans-serif;
+    font-weight: bolder;
+}
 h4,
 span {
-    font-family: "Quicksand SemiBold", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
 }
 
 p {
